@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+:root { --primary: #1A4CFF; --bg: #F2F5FA; --card: #FFFFFF; --text: #121826; --text-light: #5B657A; --border: #E2E7F0; }
+body { background: linear-gradient(145deg, #EFF2F9 0%, #E6ECF5 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; position: relative; }
+
+/* CARD STYLING */
+.card { width: 100%; max-width: 500px; background: var(--card); border-radius: 32px; box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.15); overflow: hidden; margin: 20px 0; animation: fadeIn 0.4s ease-out; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+.banner-img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
+.card-body { padding: 28px 24px 32px; }
+
+.awaaZ-header { text-align: center; margin-bottom: 20px; }
+.awaaZ-header h1 { font-size: 26px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+.awaaZ-header h1 span { color: #FF6B6B; }
+
+.header { text-align: center; margin-bottom: 24px; }
+.header h2 { font-size: 22px; font-weight: 700; color: var(--text); }
+.header p { font-size: 14px; color: var(--text-light); margin-top: 5px; }
+
+/* SOCIAL ICONS */
+.social-container { text-align: center; border-top: 1px solid var(--border); padding-top: 20px; margin-top: 10px; }
+.social-container p { font-size: 13px; color: var(--text-light); font-weight: 600; margin-bottom: 15px; }
+.social-icons { display: flex; justify-content: center; gap: 15px; }
+.social-icon { width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: white; border: 1px solid var(--border); cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.social-icon:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+.social-icon svg { width: 22px; height: 22px; }
